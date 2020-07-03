@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  backend:
+    build: ./backend
+    restart: always
+    env_file:
+      - backend/.envbackend
+    working_dir: /usr/src/app
+    volumes:
+      - ./backend/src:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm run start
+    networks:
+      - services_network
+    ports:
+      - 4000:4000
+  frontend:
+    build: ./frontend
+    restart: always
+    working_dir: /usr/src/app
+    volumes:
+      - ./frontend/src:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm run start-prod
+    networks:
+      - services_network
+    ports:
+      - 80:3000
+      - 49153:49153
+    depends_on:
+      - backend
+
+networks:
+  services_network:

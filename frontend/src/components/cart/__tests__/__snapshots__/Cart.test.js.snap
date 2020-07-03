@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing the <Cart/> component renders 1`] = `
+<header>
+  <styles__CloseButton
+    onClick={[Function]}
+    title="close"
+  >
+    <button
+      className="styles__CloseButton-sc-1tfdw1p-1 kgCIRv"
+      onClick={[Function]}
+      title="close"
+    >
+      ×
+    </button>
+  </styles__CloseButton>
+  <styles__Supreme>
+    <h3
+      className="styles__Supreme-sc-1tfdw1p-2 eaAogB"
+    >
+      Your Cart
+    </h3>
+  </styles__Supreme>
+  <p>
+    You have 
+    4
+     products in your cart.
+  </p>
+</header>
+`;

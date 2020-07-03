@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <ProductExtendedView/> component renders with proper data 1`] = `
+<h2>
+  Viewing: 
+  A Fake Product
+</h2>
+`;
+
+exports[`Testing <ProductExtendedView/> component renders with proper data 2`] = `
+<img
+  alt="A Fake Product"
+  onLoad={[Function]}
+  src="largeProduct.jpg"
+/>
+`;
+
+exports[`Testing <ProductExtendedView/> component renders with proper data 3`] = `
+<p>
+  This is a fake product for testing.
+</p>
+`;

@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing the <CreateProduct/> component renders 1`] = `
+<form
+  className="generalStyles__Form-sc-1oz5zu1-1 kCRZkl"
+  onSubmit={[Function]}
+>
+  <fieldset
+    aria-busy={false}
+    disabled={false}
+  >
+    <label
+      htmlFor="title"
+    >
+      Title
+      <input
+        id="title"
+        name="title"
+        onChange={[Function]}
+        placeholder="Title"
+        required={true}
+        type="text"
+        value=""
+      />
+    </label>
+    <label
+      htmlFor="title"
+    >
+      Price
+      <input
+        id="price"
+        name="price"
+        onChange={[Function]}
+        placeholder="Price"
+        required={true}
+        type="number"
+        value={0}
+      />
+    </label>
+    <label
+      htmlFor="title"
+    >
+      Description
+      <textarea
+        id="description"
+        name="description"
+        onChange={[Function]}
+        placeholder="Enter a Description"
+        required={true}
+        type="text"
+        value=""
+      />
+    </label>
+    <label
+      htmlFor="file"
+    >
+      Image
+      <input
+        id="file"
+        name="file"
+        onChange={[Function]}
+        placeholder="Upload Image"
+        type="file"
+      />
+    </label>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+  </fieldset>
+</form>
+`;

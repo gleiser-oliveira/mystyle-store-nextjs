@@ -1,0 +1,43 @@
+# import * from './prisma.graphql'
+type SuccessMessage {
+    message: String
+}
+
+type Mutation {
+    updateUser(id: ID!, name: String, email: String, permissions: [Permission]): User!
+    createProduct(title: String, description: String, price: Int, image: String, largeImage: String): Product!
+    updateProduct(id: ID!, title: String, description: String, price: Int): Product!
+    deleteProduct(id: ID!): Product
+    signup(email: String!, password: String!, name: String!): User!
+    signin(email: String!, password: String!): User!
+    signout: SuccessMessage
+    requestPasswordReset(email: String!): SuccessMessage
+    resetPassword(resetToken: String!, password: String!, confirmPassword: String!): User!
+    updateUserPermissions(id: ID!, permissions: [Permission]) : User
+    addProductToCart(id: ID!) : CartProduct
+    removeCartProduct(id: ID!) : CartProduct
+    removeProductFromCart(id: ID!) : CartProduct
+    removeAllProductsFromUserCart: BatchPayload!
+    createOrder(token: String!): Order!
+}
+
+type Query {
+    products(where: ProductWhereInput, orderBy: ProductOrderByInput, skip: Int, first: Int): [Product]!
+    product(where: ProductWhereUniqueInput!): Product
+    productsConnection(where: ProductWhereInput): ProductConnection!
+    usersConnection(where: UserWhereInput): UserConnection!
+    me: User
+    users(where: UserWhereInput, orderBy: UserOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [User]!
+    permissions: [PermissionDescription]!
+    order(id: ID!): Order
+    ordersConnection(where: OrderWhereInput): OrderConnection!
+    orders(where: OrderWhereInput, orderBy: OrderOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Order]!
+}
+
+type User implements Node {
+  id: ID!
+  name: String!
+  email: String!
+  permissions: [Permission!]!
+  cart: [CartProduct]!
+}

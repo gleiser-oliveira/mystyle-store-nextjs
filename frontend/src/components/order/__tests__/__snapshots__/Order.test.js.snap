@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing the <RemoveCartProductButton/> component renders 1`] = `
+Array [
+  <styles__OrderStyle
+    data-test="order"
+  >
+    <div
+      className="styles__OrderStyle-yugidx-0 cCeASZ"
+      data-test="order"
+    >
+      <Head>
+        <Component
+          handleStateChange={null}
+          inAmpMode={false}
+          reduceComponentsToState={[Function]}
+        />
+      </Head>
+      <p>
+        <span>
+          Order ID:
+        </span>
+        <span>
+          ord123
+        </span>
+      </p>
+      <p>
+        <span>
+          Charge
+        </span>
+        <span>
+          ch_123
+        </span>
+      </p>
+      <p>
+        <span>
+          Date
+        </span>
+        <span>
+          May 1, 2020 12:00:00
+        </span>
+      </p>
+      <p>
+        <span>
+          Order Total
+        </span>
+        <span>
+          $400
+        </span>
+      </p>
+      <p>
+        <span>
+          Item Count
+        </span>
+        <span>
+          2
+        </span>
+      </p>
+      <div
+        className="items"
+      >
+        <div
+          className="order-item"
+          key="7cf6a972-765a-4b57-80b6-8ba27218b86a"
+        >
+          <img
+            alt="pariatur quos est quod laborum ea quisquam"
+            src="ullam.jpg"
+          />
+          <div
+            className="item-details"
+          >
+            <h2>
+              pariatur quos est quod laborum ea quisquam
+            </h2>
+            <p>
+              Qty: 
+              1
+            </p>
+            <p>
+              Each: 
+              $42.34
+            </p>
+            <p>
+              SubTotal: 
+              $42.34
+            </p>
+            <p>
+              esse quia et commodi autem incidunt ut
+            </p>
+          </div>
+        </div>
+        <div
+          className="order-item"
+          key="5fac1c60-7272-4614-b6ce-af8879914576"
+        >
+          <img
+            alt="et repudiandae magnam aut atque dolores voluptatibus"
+            src="soluta.jpg"
+          />
+          <div
+            className="item-details"
+          >
+            <h2>
+              et repudiandae magnam aut atque dolores voluptatibus
+            </h2>
+            <p>
+              Qty: 
+              1
+            </p>
+            <p>
+              Each: 
+              $42.34
+            </p>
+            <p>
+              SubTotal: 
+              $42.34
+            </p>
+            <p>
+              ut occaecati iusto laborum placeat quia deleniti
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </styles__OrderStyle>,
+  <div
+    className="styles__OrderStyle-yugidx-0 cCeASZ"
+    data-test="order"
+  >
+    <Head>
+      <Component
+        handleStateChange={null}
+        inAmpMode={false}
+        reduceComponentsToState={[Function]}
+      />
+    </Head>
+    <p>
+      <span>
+        Order ID:
+      </span>
+      <span>
+        ord123
+      </span>
+    </p>
+    <p>
+      <span>
+        Charge
+      </span>
+      <span>
+        ch_123
+      </span>
+    </p>
+    <p>
+      <span>
+        Date
+      </span>
+      <span>
+        May 1, 2020 12:00:00
+      </span>
+    </p>
+    <p>
+      <span>
+        Order Total
+      </span>
+      <span>
+        $400
+      </span>
+    </p>
+    <p>
+      <span>
+        Item Count
+      </span>
+      <span>
+        2
+      </span>
+    </p>
+    <div
+      className="items"
+    >
+      <div
+        className="order-item"
+        key="7cf6a972-765a-4b57-80b6-8ba27218b86a"
+      >
+        <img
+          alt="pariatur quos est quod laborum ea quisquam"
+          src="ullam.jpg"
+        />
+        <div
+          className="item-details"
+        >
+          <h2>
+            pariatur quos est quod laborum ea quisquam
+          </h2>
+          <p>
+            Qty: 
+            1
+          </p>
+          <p>
+            Each: 
+            $42.34
+          </p>
+          <p>
+            SubTotal: 
+            $42.34
+          </p>
+          <p>
+            esse quia et commodi autem incidunt ut
+          </p>
+        </div>
+      </div>
+      <div
+        className="order-item"
+        key="5fac1c60-7272-4614-b6ce-af8879914576"
+      >
+        <img
+          alt="et repudiandae magnam aut atque dolores voluptatibus"
+          src="soluta.jpg"
+        />
+        <div
+          className="item-details"
+        >
+          <h2>
+            et repudiandae magnam aut atque dolores voluptatibus
+          </h2>
+          <p>
+            Qty: 
+            1
+          </p>
+          <p>
+            Each: 
+            $42.34
+          </p>
+          <p>
+            SubTotal: 
+            $42.34
+          </p>
+          <p>
+            ut occaecati iusto laborum placeat quia deleniti
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

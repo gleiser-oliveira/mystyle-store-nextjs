@@ -1,0 +1,599 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing the <Pagination/> component renders pagination for 37 products 1`] = `
+<Pagination
+  connectionName="productsConnection"
+  loading={
+    Object {
+      "event": [MockFunction] {
+        "calls": Array [
+          Array [
+            "mock",
+            false,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "name": "mock",
+    }
+  }
+  nameObjects="Products"
+  page={1}
+  pathname="products"
+  query={
+    Object {
+      "definitions": Array [
+        Object {
+          "directives": Array [],
+          "kind": "OperationDefinition",
+          "name": Object {
+            "kind": "Name",
+            "value": "PRODUCTS_PAGINATION_QUERY",
+          },
+          "operation": "query",
+          "selectionSet": Object {
+            "kind": "SelectionSet",
+            "selections": Array [
+              Object {
+                "alias": undefined,
+                "arguments": Array [],
+                "directives": Array [],
+                "kind": "Field",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "productsConnection",
+                },
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "aggregate",
+                      },
+                      "selectionSet": Object {
+                        "kind": "SelectionSet",
+                        "selections": Array [
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "count",
+                            },
+                            "selectionSet": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+          "variableDefinitions": Array [],
+        },
+      ],
+      "kind": "Document",
+      "loc": Object {
+        "end": 112,
+        "start": 0,
+      },
+    }
+  }
+>
+  <Query
+    query={
+      Object {
+        "definitions": Array [
+          Object {
+            "directives": Array [],
+            "kind": "OperationDefinition",
+            "name": Object {
+              "kind": "Name",
+              "value": "PRODUCTS_PAGINATION_QUERY",
+            },
+            "operation": "query",
+            "selectionSet": Object {
+              "kind": "SelectionSet",
+              "selections": Array [
+                Object {
+                  "alias": undefined,
+                  "arguments": Array [],
+                  "directives": Array [],
+                  "kind": "Field",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "productsConnection",
+                  },
+                  "selectionSet": Object {
+                    "kind": "SelectionSet",
+                    "selections": Array [
+                      Object {
+                        "alias": undefined,
+                        "arguments": Array [],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "aggregate",
+                        },
+                        "selectionSet": Object {
+                          "kind": "SelectionSet",
+                          "selections": Array [
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "count",
+                              },
+                              "selectionSet": undefined,
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                },
+              ],
+            },
+            "variableDefinitions": Array [],
+          },
+        ],
+        "kind": "Document",
+        "loc": Object {
+          "end": 112,
+          "start": 0,
+        },
+      }
+    }
+  >
+    <styles__PaginationStyle>
+      <div
+        className="styles__PaginationStyle-sc-45u64h-0 fSgPSQ"
+      >
+        <Head>
+          <Component
+            handleStateChange={null}
+            inAmpMode={false}
+            reduceComponentsToState={[Function]}
+          />
+        </Head>
+        <Link
+          href={
+            Object {
+              "pathname": "products",
+              "query": Object {
+                "page": 0,
+              },
+            }
+          }
+        >
+          <a
+            aria-disabled={true}
+            className="prev"
+            href="products?page=0"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Prev
+          </a>
+        </Link>
+        <p>
+          Page 
+          1
+           of 
+          10
+        </p>
+        <p
+          data-test="pagination"
+        >
+          37
+           
+          Products
+           Total
+        </p>
+        <Link
+          href={
+            Object {
+              "pathname": "products",
+              "query": Object {
+                "page": 2,
+              },
+            }
+          }
+        >
+          <a
+            aria-disabled={false}
+            className="next"
+            href="products?page=2"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Next
+          </a>
+        </Link>
+      </div>
+    </styles__PaginationStyle>
+  </Query>
+</Pagination>
+`;
+
+exports[`testing the <Pagination/> component renders pagination for 83 orders 1`] = `
+<Pagination
+  connectionName="ordersConnection"
+  loading={
+    Object {
+      "event": [MockFunction] {
+        "calls": Array [
+          Array [
+            "mock",
+            false,
+          ],
+          Array [
+            "mock",
+            false,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "name": "mock",
+    }
+  }
+  nameObjects="Orders"
+  page={1}
+  pathname="orders"
+  query={
+    Object {
+      "definitions": Array [
+        Object {
+          "directives": Array [],
+          "kind": "OperationDefinition",
+          "name": Object {
+            "kind": "Name",
+            "value": "USER_ORDERS_PAGINATION_QUERY",
+          },
+          "operation": "query",
+          "selectionSet": Object {
+            "kind": "SelectionSet",
+            "selections": Array [
+              Object {
+                "alias": undefined,
+                "arguments": Array [
+                  Object {
+                    "kind": "Argument",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "where",
+                    },
+                    "value": Object {
+                      "fields": Array [
+                        Object {
+                          "kind": "ObjectField",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "user",
+                          },
+                          "value": Object {
+                            "fields": Array [
+                              Object {
+                                "kind": "ObjectField",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "id",
+                                },
+                                "value": Object {
+                                  "kind": "Variable",
+                                  "name": Object {
+                                    "kind": "Name",
+                                    "value": "userId",
+                                  },
+                                },
+                              },
+                            ],
+                            "kind": "ObjectValue",
+                          },
+                        },
+                      ],
+                      "kind": "ObjectValue",
+                    },
+                  },
+                ],
+                "directives": Array [],
+                "kind": "Field",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "ordersConnection",
+                },
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "aggregate",
+                      },
+                      "selectionSet": Object {
+                        "kind": "SelectionSet",
+                        "selections": Array [
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "count",
+                            },
+                            "selectionSet": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+          "variableDefinitions": Array [
+            Object {
+              "defaultValue": undefined,
+              "directives": Array [],
+              "kind": "VariableDefinition",
+              "type": Object {
+                "kind": "NonNullType",
+                "type": Object {
+                  "kind": "NamedType",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "ID",
+                  },
+                },
+              },
+              "variable": Object {
+                "kind": "Variable",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "userId",
+                },
+              },
+            },
+          ],
+        },
+      ],
+      "kind": "Document",
+      "loc": Object {
+        "end": 189,
+        "start": 0,
+      },
+    }
+  }
+>
+  <Query
+    query={
+      Object {
+        "definitions": Array [
+          Object {
+            "directives": Array [],
+            "kind": "OperationDefinition",
+            "name": Object {
+              "kind": "Name",
+              "value": "USER_ORDERS_PAGINATION_QUERY",
+            },
+            "operation": "query",
+            "selectionSet": Object {
+              "kind": "SelectionSet",
+              "selections": Array [
+                Object {
+                  "alias": undefined,
+                  "arguments": Array [
+                    Object {
+                      "kind": "Argument",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "where",
+                      },
+                      "value": Object {
+                        "fields": Array [
+                          Object {
+                            "kind": "ObjectField",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "user",
+                            },
+                            "value": Object {
+                              "fields": Array [
+                                Object {
+                                  "kind": "ObjectField",
+                                  "name": Object {
+                                    "kind": "Name",
+                                    "value": "id",
+                                  },
+                                  "value": Object {
+                                    "kind": "Variable",
+                                    "name": Object {
+                                      "kind": "Name",
+                                      "value": "userId",
+                                    },
+                                  },
+                                },
+                              ],
+                              "kind": "ObjectValue",
+                            },
+                          },
+                        ],
+                        "kind": "ObjectValue",
+                      },
+                    },
+                  ],
+                  "directives": Array [],
+                  "kind": "Field",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "ordersConnection",
+                  },
+                  "selectionSet": Object {
+                    "kind": "SelectionSet",
+                    "selections": Array [
+                      Object {
+                        "alias": undefined,
+                        "arguments": Array [],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "aggregate",
+                        },
+                        "selectionSet": Object {
+                          "kind": "SelectionSet",
+                          "selections": Array [
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "count",
+                              },
+                              "selectionSet": undefined,
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                },
+              ],
+            },
+            "variableDefinitions": Array [
+              Object {
+                "defaultValue": undefined,
+                "directives": Array [],
+                "kind": "VariableDefinition",
+                "type": Object {
+                  "kind": "NonNullType",
+                  "type": Object {
+                    "kind": "NamedType",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "ID",
+                    },
+                  },
+                },
+                "variable": Object {
+                  "kind": "Variable",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "userId",
+                  },
+                },
+              },
+            ],
+          },
+        ],
+        "kind": "Document",
+        "loc": Object {
+          "end": 189,
+          "start": 0,
+        },
+      }
+    }
+  >
+    <styles__PaginationStyle>
+      <div
+        className="styles__PaginationStyle-sc-45u64h-0 fSgPSQ"
+      >
+        <Head>
+          <Component
+            handleStateChange={null}
+            inAmpMode={false}
+            reduceComponentsToState={[Function]}
+          />
+        </Head>
+        <Link
+          href={
+            Object {
+              "pathname": "orders",
+              "query": Object {
+                "page": 0,
+              },
+            }
+          }
+        >
+          <a
+            aria-disabled={true}
+            className="prev"
+            href="orders?page=0"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Prev
+          </a>
+        </Link>
+        <p>
+          Page 
+          1
+           of 
+          21
+        </p>
+        <p
+          data-test="pagination"
+        >
+          83
+           
+          Orders
+           Total
+        </p>
+        <Link
+          href={
+            Object {
+              "pathname": "orders",
+              "query": Object {
+                "page": 2,
+              },
+            }
+          }
+        >
+          <a
+            aria-disabled={false}
+            className="next"
+            href="orders?page=2"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Next
+          </a>
+        </Link>
+      </div>
+    </styles__PaginationStyle>
+  </Query>
+</Pagination>
+`;

@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <CartCount/> component matches the snapshot 1`] = `
+<styles__CountAnimation>
+  <TransitionGroup
+    childFactory={[Function]}
+    component="div"
+  >
+    <CSSTransition
+      className="count"
+      classNames="count"
+      key="1"
+      timeout={
+        Object {
+          "enter": 400,
+          "exit": 160,
+        }
+      }
+      unmountOnExit={true}
+    >
+      <styles__Dot>
+        1
+      </styles__Dot>
+    </CSSTransition>
+  </TransitionGroup>
+</styles__CountAnimation>
+`;
+
+exports[`Testing <CartCount/> component updates via props 1`] = `
+<styles__CountAnimation>
+  <TransitionGroup
+    childFactory={[Function]}
+    component="div"
+  >
+    <CSSTransition
+      className="count"
+      classNames="count"
+      key="1"
+      timeout={
+        Object {
+          "enter": 400,
+          "exit": 160,
+        }
+      }
+      unmountOnExit={true}
+    >
+      <styles__Dot>
+        1
+      </styles__Dot>
+    </CSSTransition>
+  </TransitionGroup>
+</styles__CountAnimation>
+`;
+
+exports[`Testing <CartCount/> component updates via props 2`] = `
+<styles__CountAnimation>
+  <TransitionGroup
+    childFactory={[Function]}
+    component="div"
+  >
+    <CSSTransition
+      className="count"
+      classNames="count"
+      key="3"
+      timeout={
+        Object {
+          "enter": 400,
+          "exit": 160,
+        }
+      }
+      unmountOnExit={true}
+    >
+      <styles__Dot>
+        3
+      </styles__Dot>
+    </CSSTransition>
+  </TransitionGroup>
+</styles__CountAnimation>
+`;

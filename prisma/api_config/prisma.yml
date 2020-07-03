@@ -1,0 +1,10 @@
+endpoint: ${env:PRISMA_ENDPOINT}
+datamodel: datamodel.prisma
+secret: ${env:PRISMA_ENDPOINT_SECRET}
+
+hooks:
+    post-deploy:
+      - gql get-schema
+
+seed:
+  import: seed.graphql

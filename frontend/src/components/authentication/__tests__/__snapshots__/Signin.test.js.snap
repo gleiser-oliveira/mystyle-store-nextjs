@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing the <Signin/> component renders 1`] = `
+<form
+  className="generalStyles__Form-sc-1oz5zu1-1 kCRZkl"
+  method="post"
+  onSubmit={[Function]}
+>
+  <fieldset
+    aria-busy={false}
+    disabled={false}
+  >
+    <h2>
+      Sign into your Account
+    </h2>
+    <label
+      htmlFor="email"
+    >
+      Email
+      <input
+        name="email"
+        onChange={[Function]}
+        placeholder="email"
+        type="email"
+        value=""
+      />
+    </label>
+    <label
+      htmlFor="password"
+    >
+      Password
+      <input
+        name="password"
+        onChange={[Function]}
+        placeholder="password"
+        type="password"
+        value=""
+      />
+    </label>
+    <Link
+      href={
+        Object {
+          "pathname": "/resetPassword",
+          "query": Object {
+            "email": "",
+          },
+        }
+      }
+    >
+      <a
+        href="/resetPassword?email="
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        Forgot your password? Click here!
+      </a>
+    </Link>
+    <button
+      type="submit"
+    >
+      Sign In!
+    </button>
+  </fieldset>
+</form>
+`;

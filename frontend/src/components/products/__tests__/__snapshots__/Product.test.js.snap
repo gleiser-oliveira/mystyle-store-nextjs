@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <Product/> component renders and matches snapshot 1`] = `
+<styles__ProductStyle>
+  <Image
+    alt="A Fake Product"
+    src="product.jpg"
+  />
+  <styles__Title>
+    <Link
+      href={
+        Object {
+          "pathname": "/product",
+          "query": Object {
+            "id": "QWERTY0123",
+          },
+        }
+      }
+    >
+      <a>
+        A Fake Product
+      </a>
+    </Link>
+  </styles__Title>
+  <styles__PriceTag>
+    $50
+  </styles__PriceTag>
+  <p>
+    This is a fake product for testing.
+  </p>
+  <div
+    className="buttonList"
+  >
+    <NeedsPermission
+      neededPermission={
+        Array [
+          "ADMIN",
+          "PRODUCT_UPDATE",
+        ]
+      }
+      ownerId="4234"
+      showMessage={false}
+      user={
+        Object {
+          "__typename": "User",
+          "cart": Array [],
+          "email": "Santina_Terry@yahoo.com",
+          "id": "4234",
+          "name": "Mr. Evan Jenkins",
+          "permissions": Array [
+            "USER",
+            "PRODUCT_CREATE",
+          ],
+        }
+      }
+    >
+      <Link
+        href={
+          Object {
+            "pathname": "/update",
+            "query": Object {
+              "id": "QWERTY0123",
+            },
+          }
+        }
+      >
+        <a>
+          ✏
+           Edit
+        </a>
+      </Link>
+    </NeedsPermission>
+    <AddToCartButton
+      productId="QWERTY0123"
+    />
+    <NeedsPermission
+      neededPermission={
+        Array [
+          "ADMIN",
+          "PRODUCT_DELETE",
+        ]
+      }
+      ownerId="4234"
+      showMessage={false}
+      user={
+        Object {
+          "__typename": "User",
+          "cart": Array [],
+          "email": "Santina_Terry@yahoo.com",
+          "id": "4234",
+          "name": "Mr. Evan Jenkins",
+          "permissions": Array [
+            "USER",
+            "PRODUCT_CREATE",
+          ],
+        }
+      }
+    >
+      <DeleteProduct
+        id="QWERTY0123"
+      >
+        💥
+         Delete This Product
+      </DeleteProduct>
+    </NeedsPermission>
+  </div>
+</styles__ProductStyle>
+`;

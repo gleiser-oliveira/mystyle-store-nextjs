@@ -1,0 +1,61 @@
+version: '3'
+
+services:
+  backend:
+    build: ./backend
+    restart: always
+    env_file:
+      - backend/.envbackend
+    working_dir: /usr/src/app
+    volumes:
+      - ./backend/src:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm run dev
+    networks:
+      - services_network
+    ports:
+      - 4000:4000
+  frontend:
+    build: ./frontend
+    restart: always
+    working_dir: /usr/src/app
+    volumes:
+      - ./frontend/src:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm run dev
+    networks:
+      - services_network
+    ports:
+      - 80:7777
+      - 49153:49153
+    depends_on:
+      - backend
+  postgres:
+    build: ./postgres
+    restart: always
+    env_file:
+      - postgres/.envdb
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    networks:
+      - services_network
+    ports:
+      - 5432:5432
+  prisma:
+    build: ./prisma
+    restart: always
+    env_file:
+      - prisma/.envprisma
+    volumes:
+      - ./prisma/server_config:/usr/prisma_config
+    depends_on:
+      - postgres
+    networks:
+      - services_network
+    ports:
+      - 4466:4466
+volumes:
+  postgres:
+
+networks:
+  services_network:
